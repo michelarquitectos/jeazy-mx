@@ -4,217 +4,113 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Jeazy, tienda smoke shop con accesorios, encendedores, papeles, grinders y productos seleccionados.">
-    <title>Jeazy | Smoke Shop</title>
+    <meta name="theme-color" content="#f7f7f4">
+    <meta property="og:title" content="Jeazy Store | Productos y accesorios">
+    <meta property="og:description" content="Compra productos, accesorios y novedades Jeazy. Tambien conoce Jeazy Club.">
+    <title>Jeazy Store | Productos y accesorios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=club-align-1">
   </head>
   <body>
-    <div class="age-strip">
-      <span>Venta exclusiva para mayores de edad.</span>
-      <a href="#contacto">Pregunta por disponibilidad</a>
-    </div>
+    <a class="skip" href="#contenido">Ir al contenido</a>
 
     <header class="site-header" aria-label="Navegacion principal">
-      <a class="brand" href="#inicio" aria-label="Jeazy inicio">
-        <img src="assets/jeazy-logo.png" alt="Jeazy">
-      </a>
-      <nav>
-        <a href="#catalogo">Catalogo</a>
-        <a href="#marcas">Productos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <a class="header-action" href="#contacto" aria-label="Ir a contacto">WhatsApp</a>
+      <div class="nav-inner">
+        <a class="brand" href="#inicio" aria-label="Jeazy Store inicio">
+          <img src="assets/jeazy-logo.png" alt="Jeazy">
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#inicio">Inicio</a>
+          <a href="#catalogo">Catalogo</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#contacto">Contacto</a>
+          <a class="sister-link" href="https://michelarquitectos.github.io/jeazy-club/">Jeazy Club</a>
+        </nav>
+        <a class="header-action" href="https://michelarquitectos.github.io/jeazy-club/" aria-label="Ir a Jeazy Club">Jeazy Club</a>
+        <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">Menu</button>
+      </div>
     </header>
 
-    <main id="inicio">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Smoke shop y accesorios</p>
-          <h1 id="hero-title">Jeazy</h1>
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Jeazy Store</p>
+          <h1 id="hero-title">Productos, accesorios y novedades.</h1>
+          <p class="hero-promise">La tienda hermana de Jeazy Club.</p>
           <p class="hero-text">
             Todo para tu setup: papeles, blunts, encendedores, grinders, filtros,
             charolas, pipas, accesorios y novedades seleccionadas.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#catalogo">Ver catalogo</a>
-            <a class="button secondary" href="#contacto">Cotizar pedido</a>
+            <a class="button secondary" href="https://michelarquitectos.github.io/jeazy-club/">Ir a Jeazy Club</a>
           </div>
+          <div class="trust-row"><span>+18</span><span>Catalogo variado</span><span>Comunidad Jeazy</span></div>
         </div>
 
-        <div class="hero-visual" aria-label="Productos destacados de Jeazy">
+        <div class="hero-visual reveal" aria-label="Productos destacados de Jeazy">
           <img class="hero-photo" src="assets/jeazy-counter.png" alt="Mostrador con accesorios de smoke shop Jeazy">
           <div class="logo-badge">
             <img src="assets/jeazy-logo.png" alt="">
           </div>
           <div class="product-scene">
-            <div class="scene-card papers">
-              <span>Rolling</span>
-              <strong>Papers</strong>
-            </div>
-            <div class="scene-card grinder">
-              <span>Metal</span>
-              <strong>Grinder</strong>
-            </div>
-            <div class="scene-card lighter">
-              <span>Flama</span>
-              <strong>Lighters</strong>
-            </div>
-            <div class="scene-card tray">
-              <span>Setup</span>
-              <strong>Charolas</strong>
-            </div>
+            <div class="scene-card papers"><span>Rolling</span><strong>Papers</strong></div>
+            <div class="scene-card grinder"><span>Metal</span><strong>Grinder</strong></div>
+            <div class="scene-card lighter"><span>Flama</span><strong>Lighters</strong></div>
+            <div class="scene-card tray"><span>Setup</span><strong>Charolas</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="trust-band" aria-label="Ventajas de Jeazy">
-        <div>
-          <strong>Catalogo variado</strong>
-          <span>Productos de smoke shop, accesorios y novedades.</span>
-        </div>
-        <div>
-          <strong>Respuesta rapida</strong>
-          <span>Consulta existencias y precios por mensaje.</span>
-        </div>
-        <div>
-          <strong>Compras sencillas</strong>
-          <span>Pide por WhatsApp y recibe atencion directa.</span>
-        </div>
+      <section class="ecosystem-band" aria-label="Ecosistema Jeazy">
+        <a class="ecosystem-item active" href="#inicio"><span>Jeazy Store</span><strong>Productos y accesorios</strong></a>
+        <a class="ecosystem-item" href="https://michelarquitectos.github.io/jeazy-club/"><span>Jeazy Club</span><strong>Comunidad y beneficios</strong></a>
       </section>
 
-      <section class="image-strip" aria-label="Galeria de productos Jeazy">
-        <figure class="image-feature wide">
-          <img src="assets/jeazy-display.png" alt="Vitrina y exhibicion de productos Jeazy">
-          <figcaption>
-            <span>Tienda</span>
-            <strong>Variedad para explorar</strong>
-          </figcaption>
-        </figure>
-        <figure class="image-feature">
-          <img src="assets/jeazy-accessories.png" alt="Accesorios de smoke shop organizados">
-          <figcaption>
-            <span>Accesorios</span>
-            <strong>Grinders, charolas y mas</strong>
-          </figcaption>
-        </figure>
+      <section class="trust-band reveal" aria-label="Ventajas de Jeazy">
+        <div><span>01</span><strong>Catalogo variado</strong><span>Productos de smoke shop, accesorios y novedades.</span></div>
+        <div><span>02</span><strong>Respuesta rapida</strong><span>Consulta existencias y precios por mensaje.</span></div>
+        <div><span>03</span><strong>Compras sencillas</strong><span>Pide por WhatsApp y recibe atencion directa.</span></div>
+      </section>
+
+      <section class="image-strip reveal" aria-label="Galeria de productos Jeazy">
+        <figure class="image-feature wide"><img src="assets/jeazy-display.png" alt="Vitrina y exhibicion de productos Jeazy"><figcaption><span>Tienda</span><strong>Variedad para explorar</strong></figcaption></figure>
+        <figure class="image-feature"><img src="assets/jeazy-accessories.png" alt="Accesorios de smoke shop organizados"><figcaption><span>Accesorios</span><strong>Grinders, charolas y mas</strong></figcaption></figure>
       </section>
 
       <section class="section catalog-section" id="catalogo" aria-labelledby="catalog-title">
-        <div class="section-heading">
-          <p class="eyebrow">Catalogo</p>
-          <h2 id="catalog-title">Lo mas pedido</h2>
-        </div>
+        <div class="section-heading"><div><p class="eyebrow">Catalogo</p><h2 id="catalog-title">Lo mas pedido</h2></div><p>Una seleccion sencilla para consultar rapido y pedir por mensaje.</p></div>
         <div class="filters" aria-label="Filtrar productos">
           <button class="filter-button active" type="button" data-filter="all">Todo</button>
           <button class="filter-button" type="button" data-filter="rolling">Rolling</button>
           <button class="filter-button" type="button" data-filter="accesorios">Accesorios</button>
           <button class="filter-button" type="button" data-filter="setup">Setup</button>
         </div>
-
         <div class="product-grid">
-          <article class="product-card" data-category="rolling">
-            <div class="product-art art-papers" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Rolling</span>
-              <h3>Papeles y blunts</h3>
-              <p>Sabores, medidas clasicas, king size y opciones para cada estilo.</p>
-            </div>
-          </article>
-          <article class="product-card" data-category="accesorios">
-            <div class="product-art art-grinders" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Accesorios</span>
-              <h3>Grinders</h3>
-              <p>Modelos compactos, metalicos, con deposito y colores llamativos.</p>
-            </div>
-          </article>
-          <article class="product-card" data-category="setup">
-            <div class="product-art art-trays" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Setup</span>
-              <h3>Charolas</h3>
-              <p>Disenos practicos para mantener todo ordenado en un solo lugar.</p>
-            </div>
-          </article>
-          <article class="product-card" data-category="accesorios">
-            <div class="product-art art-lighters" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Accesorios</span>
-              <h3>Encendedores</h3>
-              <p>Flama confiable, formatos recargables y piezas coleccionables.</p>
-            </div>
-          </article>
-          <article class="product-card" data-category="rolling">
-            <div class="product-art art-filters" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Rolling</span>
-              <h3>Filtros y tips</h3>
-              <p>Tips de carton, filtros premium y complementos para armar mejor.</p>
-            </div>
-          </article>
-          <article class="product-card" data-category="setup">
-            <div class="product-art art-glass" aria-hidden="true"></div>
-            <div class="product-info">
-              <span>Setup</span>
-              <h3>Pipas y vidrio</h3>
-              <p>Piezas funcionales, faciles de limpiar y listas para exhibir.</p>
-            </div>
-          </article>
+          <article class="product-card" data-category="rolling"><div class="product-art art-papers" aria-hidden="true"></div><div class="product-info"><span>Rolling</span><h3>Papeles y blunts</h3><p>Sabores, medidas clasicas, king size y opciones para cada estilo.</p></div></article>
+          <article class="product-card" data-category="accesorios"><div class="product-art art-grinders" aria-hidden="true"></div><div class="product-info"><span>Accesorios</span><h3>Grinders</h3><p>Modelos compactos, metalicos, con deposito y colores llamativos.</p></div></article>
+          <article class="product-card" data-category="setup"><div class="product-art art-trays" aria-hidden="true"></div><div class="product-info"><span>Setup</span><h3>Charolas</h3><p>Disenos practicos para mantener todo ordenado en un solo lugar.</p></div></article>
+          <article class="product-card" data-category="accesorios"><div class="product-art art-lighters" aria-hidden="true"></div><div class="product-info"><span>Accesorios</span><h3>Encendedores</h3><p>Flama confiable, formatos recargables y piezas coleccionables.</p></div></article>
+          <article class="product-card" data-category="rolling"><div class="product-art art-filters" aria-hidden="true"></div><div class="product-info"><span>Rolling</span><h3>Filtros y tips</h3><p>Tips de carton, filtros premium y complementos para armar mejor.</p></div></article>
+          <article class="product-card" data-category="setup"><div class="product-art art-glass" aria-hidden="true"></div><div class="product-info"><span>Setup</span><h3>Pipas y vidrio</h3><p>Piezas funcionales, faciles de limpiar y listas para exhibir.</p></div></article>
         </div>
       </section>
 
-      <section class="feature-band" id="marcas" aria-labelledby="feature-title">
-        <div>
-          <p class="eyebrow">Jeazy selection</p>
-          <h2 id="feature-title">Productos para armar tu kit completo</h2>
-        </div>
-        <p>
-          Desde lo basico para el dia a dia hasta accesorios para regalar o
-          renovar tu coleccion. Pregunta por marcas, modelos y colores disponibles.
-        </p>
-      </section>
+      <section class="feature-band reveal" id="marcas" aria-labelledby="feature-title"><div><p class="eyebrow">Jeazy selection</p><h2 id="feature-title">Productos para armar tu kit completo</h2></div><p>Desde lo basico para el dia a dia hasta accesorios para regalar o renovar tu coleccion. Pregunta por marcas, modelos y colores disponibles.</p></section>
 
-      <section class="section vibe-section" aria-labelledby="vibe-title">
-        <div class="vibe-copy">
-          <p class="eyebrow">Experiencia Jeazy</p>
-          <h2 id="vibe-title">Un lugar con color, variedad y buen estilo</h2>
-          <p>
-            La idea visual es que el cliente vea una tienda surtida desde el
-            primer vistazo: exhibidores, accesorios, opciones para regalo y
-            productos faciles de consultar por mensaje.
-          </p>
-        </div>
-        <div class="vibe-gallery" aria-label="Imagenes del estilo Jeazy">
-          <img src="assets/jeazy-counter.png" alt="Mostrador colorido con productos Jeazy">
-          <img src="assets/jeazy-display.png" alt="Estantes de accesorios y productos Jeazy">
-          <img src="assets/jeazy-accessories.png" alt="Detalle de accesorios Jeazy">
-        </div>
-      </section>
+      <section class="section sister-section reveal" aria-labelledby="sister-title"><div><p class="eyebrow">Pagina hermana</p><h2 id="sister-title">Tambien conoce Jeazy Club.</h2><p>Jeazy Store es la parte de productos. Jeazy Club es el espacio de comunidad, beneficios y acceso privado para miembros adultos.</p></div><a class="sister-card" href="https://michelarquitectos.github.io/jeazy-club/"><span>Jeazy Club</span><strong>Tu espacio. Tu comunidad.</strong><em>Conocer el club</em></a></section>
 
-      <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
-        <div class="contact-copy">
-          <p class="eyebrow">Contacto</p>
-          <h2 id="contact-title">Haz tu pedido con Jeazy</h2>
-          <p>
-            Escribenos para confirmar inventario, precios, entregas y promociones
-            vigentes. Atencion solo a mayores de edad.
-          </p>
-        </div>
-        <div class="contact-card">
-          <a class="contact-link whatsapp" href="https://wa.me/">WhatsApp</a>
-          <a class="contact-link instagram" href="https://www.instagram.com/">Instagram</a>
-          <a class="contact-link map" href="mailto:hola@jeazy.com">hola@jeazy.com</a>
-        </div>
-      </section>
+      <section class="section vibe-section" id="experiencia" aria-labelledby="vibe-title"><div class="vibe-copy"><p class="eyebrow">Experiencia Jeazy</p><h2 id="vibe-title">Un lugar con color, variedad y buen estilo</h2><p>La idea visual es que el cliente vea una tienda surtida desde el primer vistazo: exhibidores, accesorios, opciones para regalo y productos faciles de consultar por mensaje.</p></div><div class="vibe-gallery reveal" aria-label="Imagenes del estilo Jeazy"><img src="assets/jeazy-counter.png" alt="Mostrador colorido con productos Jeazy"><img src="assets/jeazy-display.png" alt="Estantes de accesorios y productos Jeazy"><img src="assets/jeazy-accessories.png" alt="Detalle de accesorios Jeazy"></div></section>
+
+      <section class="section contact-section reveal" id="contacto" aria-labelledby="contact-title"><div class="contact-copy"><p class="eyebrow">Contacto</p><h2 id="contact-title">Haz tu pedido con Jeazy</h2><p>Escribenos para confirmar inventario, precios, entregas y promociones vigentes. Atencion solo a mayores de edad.</p></div><div class="contact-card"><a class="contact-link whatsapp" href="https://wa.me/">WhatsApp</a><a class="contact-link instagram" href="https://www.instagram.com/">Instagram</a><a class="contact-link map" href="mailto:hola@jeazy.com">hola@jeazy.com</a></div></section>
     </main>
 
-    <footer class="site-footer">
-      <img src="assets/jeazy-logo.png" alt="Jeazy">
-      <span>Jeazy Smoke Shop. Venta exclusiva para mayores de edad.</span>
-    </footer>
+    <footer class="site-footer"><div><img src="assets/jeazy-logo.png" alt="Jeazy"><p>Productos, accesorios y novedades para adultos.</p></div><div><a href="#catalogo">Catalogo</a><a href="#contacto">Contacto</a><a href="https://michelarquitectos.github.io/jeazy-club/">Jeazy Club</a></div><div><a href="https://wa.me/">WhatsApp</a><a href="https://www.instagram.com/">Instagram</a><a href="mailto:hola@jeazy.com">hola@jeazy.com</a></div><div class="footer-bottom"><span>2026 Jeazy Store</span><span>Exclusivo para mayores de edad.</span></div></footer>
 
-    <script src="script.js"></script>
+    <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle"><div class="age-card"><img src="assets/jeazy-logo.png" alt="Jeazy"><p class="eyebrow">Acceso responsable</p><h2 id="ageTitle">Eres mayor de edad?</h2><p>Este sitio contiene informacion dirigida exclusivamente a personas adultas.</p><button class="button primary" id="ageYes" type="button">Si, soy mayor de edad</button><button class="age-no" id="ageNo" type="button">No, salir del sitio</button></div></div>
+
+    <script src="script.js?v=club-align-1"></script>
   </body>
 </html>
