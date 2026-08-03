@@ -44,14 +44,32 @@
   display: block;
 }
 
+.distributor-section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(50px, 7vw, 82px) 24px;
+}
+
+.distributor-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.distributor-heading h2 {
+  max-width: 720px;
+  margin: 0;
+}
+
 .brand-feature {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.76fr);
   gap: clamp(28px, 6vw, 78px);
   align-items: center;
-  max-width: var(--max);
-  margin: 34px auto 0;
-  padding: clamp(50px, 7vw, 82px) 24px;
+  margin: 0;
+  padding: clamp(38px, 6vw, 64px);
 }
 
 .puffco-section {
@@ -65,14 +83,43 @@
   box-shadow: var(--shadow);
 }
 
+.blazy-section {
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(21, 24, 21, 0.1);
+  border-radius: 28px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(241, 120, 172, 0.24), transparent 25%),
+    radial-gradient(circle at 70% 75%, rgba(17, 198, 175, 0.14), transparent 22%),
+    linear-gradient(135deg, #fff, #f7f7f4 54%, #fff0f6);
+  box-shadow: var(--shadow);
+}
+
 .brand-feature-copy p {
   max-width: 610px;
   color: rgba(255, 255, 255, 0.78);
 }
 
-.brand-feature-copy h2,
+.brand-feature-copy h3,
 .puffco-section .eyebrow {
   color: #fff;
+}
+
+.brand-feature-copy h3 {
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.blazy-section .brand-feature-copy p {
+  color: var(--muted);
+}
+
+.blazy-section .brand-feature-copy h3,
+.blazy-section .eyebrow {
+  color: var(--purple);
 }
 
 .puffco-visual {
@@ -86,71 +133,32 @@
     rgba(255, 255, 255, 0.08);
 }
 
-.puffco-device {
-  position: absolute;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #f8f8f5, #d8ded8);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
+.puffco-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  display: block;
+  object-fit: cover;
 }
 
-.main-device {
-  width: 92px;
-  height: 210px;
-  left: 24%;
-  top: 72px;
-}
-
-.main-device span {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  left: 25px;
-  top: 56px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, var(--lime), var(--teal));
-  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.55);
-}
-
-.small-device {
-  width: 72px;
-  height: 160px;
-  right: 22%;
-  top: 116px;
-  transform: rotate(9deg);
-}
-
-.puffco-ring {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  right: 15%;
-  bottom: 36px;
-  border: 18px solid rgba(183, 240, 25, 0.72);
-  border-radius: 50%;
-}
-
-.puffco-label {
-  position: absolute;
-  left: 26px;
-  right: 26px;
-  bottom: 24px;
+.catalog-contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 18px;
-  align-items: end;
+  align-items: center;
+  margin-top: 28px;
+  padding: 24px 28px;
+  border: 1px solid rgba(21, 24, 21, 0.1);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(22, 30, 25, 0.045);
 }
 
-.puffco-label span {
-  font-size: clamp(2.1rem, 5vw, 4.6rem);
-  font-weight: 800;
-  line-height: 0.9;
-}
-
-.puffco-label strong {
-  max-width: 180px;
-  color: var(--lime);
-  font-size: 0.95rem;
-  text-align: right;
+.catalog-contact p {
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .cbd-section {
@@ -169,11 +177,12 @@
   box-shadow: var(--shadow);
 }
 
-.cbd-visual svg {
+.cbd-visual img {
   width: 100%;
   height: 100%;
   min-height: 430px;
   display: block;
+  object-fit: cover;
 }
 
 .cbd-copy > p {
@@ -231,6 +240,10 @@
 }
 
 @media (max-width: 1000px) {
+  .distributor-heading {
+    display: block;
+  }
+
   .brand-feature {
     grid-template-columns: 1fr;
   }
@@ -252,24 +265,34 @@
 
   .brand-feature {
     margin-top: 24px;
+    padding: 30px 22px;
     border-radius: 20px;
+  }
+
+  .distributor-section {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .puffco-visual {
     min-height: 320px;
   }
 
-  .puffco-label {
-    display: block;
+  .puffco-visual img {
+    min-height: 320px;
   }
 
-  .puffco-label strong {
-    display: block;
-    margin-top: 8px;
-    text-align: left;
-  }
-
-  .cbd-visual svg {
+  .cbd-visual img {
     min-height: 340px;
+  }
+
+  .catalog-contact {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .catalog-contact .button {
+    width: 100%;
   }
 }
