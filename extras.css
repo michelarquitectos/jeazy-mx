@@ -101,6 +101,40 @@
   color: rgba(255, 255, 255, 0.78);
 }
 
+.brand-logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(100%, 390px);
+  margin-bottom: 22px;
+}
+
+.brand-logo-lockup img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.puffco-logo-lockup {
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.42);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+}
+
+.puffco-logo-lockup img {
+  width: min(330px, 76vw);
+}
+
+.blazy-logo-lockup {
+  padding: 8px 0;
+}
+
+.blazy-logo-lockup img {
+  width: min(360px, 76vw);
+}
+
 .brand-feature-copy h3,
 .puffco-section .eyebrow {
   color: #fff;
