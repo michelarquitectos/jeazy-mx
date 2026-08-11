@@ -135,6 +135,16 @@
   width: min(360px, 76vw);
 }
 
+.hemp-logo-lockup {
+  padding: 0;
+}
+
+.hemp-logo-lockup img {
+  width: min(160px, 42vw);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(22, 30, 25, 0.08);
+}
+
 .brand-feature-copy h3,
 .puffco-section .eyebrow {
   color: #fff;
@@ -154,6 +164,11 @@
 .blazy-section .brand-feature-copy h3,
 .blazy-section .eyebrow {
   color: var(--purple);
+}
+
+.cbd-section .brand-feature-copy h3,
+.cbd-section .eyebrow {
+  color: var(--green);
 }
 
 .puffco-visual {
@@ -196,50 +211,30 @@
 }
 
 .cbd-section {
-  display: grid;
-  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1fr);
-  gap: clamp(30px, 6vw, 76px);
-  align-items: center;
-  padding-top: 80px;
-}
-
-.cbd-visual {
-  position: relative;
+  margin: clamp(34px, 6vw, 76px) var(--page-gutter) 0;
   overflow: hidden;
   border: 1px solid rgba(21, 24, 21, 0.1);
-  border-radius: 24px;
-  background: #f0f1ed;
+  border-radius: 28px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 82% 20%, rgba(183, 240, 25, 0.22), transparent 25%),
+    radial-gradient(circle at 72% 78%, rgba(17, 198, 175, 0.16), transparent 22%),
+    linear-gradient(135deg, #f8fbf0, #f1f7ed 55%, #ffffff);
   box-shadow: var(--shadow);
 }
 
-.cbd-visual > img {
+.cbd-visual {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.08)),
+    rgba(255, 255, 255, 0.28);
+}
+
+.cbd-visual img {
   width: 100%;
   height: 100%;
-  min-height: 430px;
+  min-height: 360px;
   display: block;
   object-fit: cover;
-}
-
-.cbd-brand-card {
-  position: absolute;
-  left: 16px;
-  top: 18px;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  width: min(124px, calc(100% - 32px));
-  padding: 0;
-  background: transparent;
-}
-
-.cbd-brand-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  border-radius: 10px;
-  box-shadow: 0 10px 24px rgba(22, 30, 25, 0.1);
-  object-fit: contain;
 }
 
 .cbd-copy > p {
@@ -252,26 +247,15 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .cbd-benefits article {
-  min-height: 210px;
-  padding: 24px;
+  min-height: 0;
+  padding: 20px;
   border: 1px solid rgba(21, 24, 21, 0.1);
-  border-radius: var(--radius);
-  background: #fff;
-  box-shadow: 0 12px 36px rgba(22, 30, 25, 0.045);
-}
-
-.cbd-benefits span {
-  display: block;
-  margin-bottom: 48px;
-  color: var(--green);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.68);
 }
 
 .cbd-benefits strong {
@@ -339,14 +323,8 @@
     min-height: 320px;
   }
 
-  .cbd-visual > img {
+  .cbd-visual img {
     min-height: 340px;
-  }
-
-  .cbd-brand-card {
-    left: 12px;
-    top: 14px;
-    width: min(110px, calc(100% - 24px));
   }
 
   .catalog-contact {
