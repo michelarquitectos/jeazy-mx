@@ -237,6 +237,11 @@
   object-fit: cover;
 }
 
+.cbd-media-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .cbd-copy > p {
   max-width: 650px;
   color: var(--muted);
@@ -247,15 +252,15 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .cbd-benefits article {
   min-height: 0;
-  padding: 20px;
+  padding: 18px;
   border: 1px solid rgba(21, 24, 21, 0.1);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.68);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .cbd-benefits strong {
@@ -272,7 +277,7 @@
 }
 
 .cbd-note {
-  margin-top: 18px;
+  margin: 14px 0 0;
   color: var(--green) !important;
   font-size: 12px !important;
   font-weight: 700;
