@@ -273,10 +273,6 @@ h3 {
 }
 
 .hero-location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
   max-width: 640px;
   margin: -8px 0 34px;
   padding: 18px;
@@ -306,7 +302,6 @@ h3 {
 }
 
 .button.location-button {
-  flex: 0 0 auto;
   min-height: 44px;
   padding: 0 18px;
   color: #fff;
@@ -1311,12 +1306,6 @@ h3 {
 
   .trust-row {
     gap: 12px;
-  }
-
-  .hero-location {
-    align-items: stretch;
-    flex-direction: column;
-    margin-bottom: 28px;
   }
 
   .button.location-button {
