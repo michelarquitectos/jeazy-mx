@@ -162,17 +162,19 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
-  gap: clamp(34px, 5vw, 68px);
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: clamp(26px, 4vw, 44px);
+  align-items: start;
   max-width: var(--max);
   min-height: calc(100vh - 82px);
   margin: auto;
-  padding: 58px 24px 70px;
+  padding: 34px 24px 70px;
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .eyebrow {
@@ -230,6 +232,8 @@ h3 {
 
 .hero-text {
   max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--muted);
   font-size: 15px;
 }
@@ -238,6 +242,7 @@ h3 {
 .actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
   margin: 32px 0;
 }
@@ -274,7 +279,7 @@ h3 {
 
 .hero-location {
   max-width: 640px;
-  margin: -8px 0 34px;
+  margin: -8px auto 0;
   padding: 18px;
   border: 1px solid rgba(21, 24, 21, 0.12);
   border-radius: 16px;
@@ -310,7 +315,7 @@ h3 {
 }
 
 .trust-row {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 0;
   margin-top: 42px;
@@ -334,7 +339,8 @@ h3 {
 
 .hero-visual {
   position: relative;
-  min-height: 650px;
+  min-height: clamp(420px, 56vw, 650px);
+  width: 100%;
   overflow: hidden;
   border: 1px solid rgba(21, 24, 21, 0.1);
   border-radius: 4px 4px 110px 4px;
@@ -371,17 +377,18 @@ h3 {
 
 .logo-badge {
   position: absolute;
-  top: 42px;
+  top: 50%;
   left: 26px;
   right: 26px;
   z-index: 3;
   display: flex;
   justify-content: center;
-  animation: jeazyFloat 5.5s ease-in-out infinite;
+  transform: translateY(-50%);
+  animation: none;
 }
 
 .logo-badge img {
-  width: min(380px, 88%);
+  width: min(430px, 82%);
   filter: drop-shadow(0 0 28px rgba(183, 240, 25, 0.28));
 }
 
@@ -492,15 +499,6 @@ h3 {
 .trust-band .trust-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 40px rgba(22, 30, 25, 0.08);
-}
-
-.trust-band div > span:first-child,
-.trust-band .trust-link > span:first-child {
-  display: block;
-  margin-bottom: 48px;
-  color: var(--green);
-  font-size: 11px;
-  font-weight: 700;
 }
 
 .trust-band strong,
