@@ -1,6 +1,10 @@
-# Jeazy Smoke Shop
+# Jeazy Store
 
-Sitio web estatico para Jeazy.
+Sitio web estatico de Jeazy Store.
+
+Dominio principal:
+
+https://www.jeazy.mx/
 
 ## Archivos principales
 
@@ -8,30 +12,16 @@ Sitio web estatico para Jeazy.
 - `styles.css`: estilos visuales y responsivos.
 - `script.js`: filtro del catalogo.
 - `assets/`: logo e imagenes del sitio.
+- `robots.txt`: reglas basicas para buscadores.
+- `sitemap.xml`: mapa del sitio con el dominio principal.
 
-## Subir a GitHub Pages
+## Publicacion
 
-1. Crea un repositorio nuevo en GitHub.
-2. Sube estos archivos y carpetas a la raiz del repositorio:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `.nojekyll`
-   - `assets/`
-3. En GitHub, entra a `Settings`.
-4. Abre `Pages`.
-5. En `Build and deployment`, selecciona:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-6. Guarda los cambios.
-
-GitHub tardara unos minutos en publicar la pagina.
+El sitio se publica desde la rama principal del repositorio conectado al dominio propio.
 
 ## Datos por cambiar
 
-Antes de publicar, conviene reemplazar en `index.html`:
+Pendientes posibles:
 
-- Link de WhatsApp.
 - Link de Instagram.
-- Correo de contacto.
+- Destino definitivo de Jeazy Club si no se publica dentro de `/jeazy-club/`.
